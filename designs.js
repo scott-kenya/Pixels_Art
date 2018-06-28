@@ -1,6 +1,6 @@
 // Select color input
 // Select size input
-var height, size, color;
+let height, size, color;
 
 
 $('#sizePicker').submit( function(event){
@@ -15,10 +15,10 @@ $('#sizePicker').submit( function(event){
 function makeGrid(x,y) {
 	$('tr').remove();
 
-for (var i = 1; i <= x; i++) {
+for (let i = 1; i <= x; i++) {
 	$('#pixelCanvas').append('<tr id = table' + i + '></tr>');
 
-for (var j = 1; j <= y; j++) {
+for (let j = 1; j <= y; j++) {
 	$('#table' + i ).append('<td></td>');
 	}}
 
